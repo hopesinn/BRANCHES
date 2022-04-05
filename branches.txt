@@ -15,14 +15,26 @@ git add bag_report.txt
 git commit -m"commit"
 
 
-4. Запушить структуру багрепорта на внешний репозиторий ------- git push --set-upstream origin second
+4. Запушить структуру багрепорта на внешний репозиторий ------- git push --set-upstream origin 
 
 5. Вмержить ветку Bag Reports в Main ------- 
 git checkout main
 git merge BagReports
 
-? 6. Запушить main на внешний репозиторий.------- git push
+6. Запушить main на внешний репозиторий.------- git push -u origin main
 7. В ветке CheckLists набросать структуру чек листа.
-8. Запушить структуру на внешний репозиторий
-9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
-10. Синхронизировать Внешнюю и Локальную ветки Main
+
+touch checklist.txt
+git add checklist.txt
+git commit -m"commit"
+
+8. Запушить структуру на внешний репозиторий ------- git push
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main -------
+Open a pull request
+base:main
+commit
+create pull request
+merge pull request
+confirm merge
+
+10. Синхронизировать Внешнюю и Локальную ветки Main ------- git pull --set-upstream origin
